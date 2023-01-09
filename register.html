@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("blood.jpg");
+ background-size:100%;
+  background-attachment:scroll;
+  
+}
+.i1{text-align:center;}
+ .b1{width:150px;
+ color:white;
+ border-radius:10px;
+ height:50px;
+ font-weight:bold;
+ background-color:blue;
+ font-size:30px;}
+ .b1:hover{background-color:green;}
+  h3 {
+        font-size: 40px;
+        font-family: serif;
+        color: transparent;
+        text-align: center;
+        animation: effect 2s linear infinite;
+    }
+  
+    @keyframes effect {
+        0% {
+            background: linear-gradient(
+                #008000, #00FF00);
+            -webkit-background-clip: text;
+        }
+  
+        100% {
+            background: linear-gradient(
+                #3CE7D7, #000FFF);
+            -webkit-background-clip: text;
+        }
+    }
+.div1{height:400px;
+border-radius: 15px 50px;
+padding:20px;
+background-color:#d3d3d3;
+width:500px;
+border:solid black 3px;
+font-size:30px;
+margin:auto;
+margin-top:120px;
+text-align:center;
+font-family:serif;}
+.t1{margin:auto;}
+.btn{
+height:30px;
+width:120px;
+border-radius:15px;
+font-size:10px;
+color:black;}
+.btn2{font-size:15px}
+
+<title> Registration </title>
+</style>
+</head>
+<body>
+<marquee style="font-size:80px; color:red;" width="100%" direction="left" height="12%" scrollamount="12" bgcolor="black" >
+Donate Blood, Save Lives.
+</marquee>
+<button class="btn" type="button"><a href="final.html"><div class="btn2" >Home</div></a></button>
+<div class="div1"><h3>New User Registration</h3>
+
+<form id="f1">
+<table class="t1">
+<tr>
+ <td> <label for="name">Name:</label></td>
+  <td><input type="text" ></td>
+  <td><label for="gender">&nbsp;&nbsp;Gender-</label>
+ </td>
+  <td> <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+  <label for="male">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="female">Other</label></td>
+  </tr><tr>
+  <td><label for="age">Age:</label></td>
+  <td><input type="text"></td>
+  <td><label for="state">&nbsp;&nbsp;State</label></td>
+  <td><input type="text" style="width:200px"></td>
+ </tr><tr>
+  <td><label for="dob">DOB:</label></td>
+<td><input style="width:165px" type="date" value="DOB" max="2003-04-23" ></td>
+<td><label for="email"></label>&nbsp;&nbsp;Email</td><td><input type="email" style="width:200px"></td></tr>
+</table><br>
+<input class="i1" type="password" placeholder="Set Password" style="border-radius:15px;height:30px;"><br><br>
+<button name="button"type="submit" class="b1" formaction="blood donation.html">Submit</button>
+</form>
+
+
+</div>
+</body>
+</html>
